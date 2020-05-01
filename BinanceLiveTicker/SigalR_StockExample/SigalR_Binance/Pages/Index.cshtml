@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page - ASP.NET Core 3.0 SignalR Binance Live Ticker";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<h1>ASP.NET Core 3.0 SignalR Binance Live Ticker Sample</h1>
+
+<div id="BinanceTicker">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.min.js"></script>
+<script src="~/js/binance.js"></script>
